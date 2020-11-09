@@ -20,6 +20,6 @@ nums.push_back(5);
 nums.push_back(3);
 nums.push_back(6);
 nums.push_back(4);
-maxProfit(nums);
+cout << maxProfit(nums) << endl;
 
 }

@@ -18,7 +18,7 @@ int removeDuplicates(vector<int> &nums)
     return nums.size();
 };
 
-int removeDuplicates(vector<int> &nums)//Solution
+int removeDuplicates2(vector<int> &nums)//Solution
 {
     nums.erase(unique(nums.begin(), nums.end()), nums.end()); //This deletes everything after unique
 
@@ -47,6 +47,16 @@ int main()
     {
         cout << numbers[i] << endl;
     }
+    
+    numbers.insert(numbers.begin(), numbers.back());
+
+    for (int i = 0; i < numbers.size(); i++)
+    {
+        cout << numbers[i] << endl;
+    }
+
+    
+
 
     // removeDuplicates(numbers);
 }
